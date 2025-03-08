@@ -1,0 +1,373 @@
+<UIScene SceneName="IngameTest.xml">
+    <UIObject Name="ScreenBlood" isRender="false" Group="None" Scene="IngameTest.xml">
+        <Position x="0" y="0" z="0.69999999"/>
+        <Scale width="1280" height="720"/>
+        <Texture texPath="../../res/ui/GoreSplash.png"/>
+        <Scripts>
+            <Script Type="UIEvent">
+                <args Function="HitPlayerEffect"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="RushEffect" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="0" y="0" z="0"/>
+        <Scale width="1270" height="720"/>
+        <Texture texPath="../../res/ui/dash.png"/>
+        <Scripts>
+            <Script Type="ChangeTexture"/>
+            <Script Type="UIEvent">
+                <args Function="RushEffect"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="wp_background" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="461" y="-293" z="0"/>
+        <Scale width="292" height="86"/>
+        <Texture texPath="../../res/ui/ui_weapon_bg.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="weaponUI" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="367" y="-288" z="0"/>
+        <Scale width="70" height="70"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bullet.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="C_Ammo" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="432" y="-290" z="0"/>
+        <Scale width="50" height="45"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="2" TexListXml="../../res/ui/xml/testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Wave_bg" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="534" y="259" z="0"/>
+        <Scale width="200" height="200"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\frame.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Ammo" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="529" y="-290" z="0"/>
+        <Scale width="50" height="45"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="2" TexListXml="../../res/ui/xml/testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="AmmoSlash" isRender="true" Group="AmmoSlash" Scene="IngameTest.xml">
+        <Position x="493" y="-289" z="0"/>
+        <Scale width="16" height="40"/>
+        <Texture texPath="../../res/ui/slash.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="WaveSlash" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="536" y="249" z="0"/>
+        <Scale width="40" height="50"/>
+        <Texture texPath="../../res/ui/slash.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="crr_Wave" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="443" y="248" z="0"/>
+        <Scale width="40" height="50"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="1" TexListXml="../../res/ui/xml/testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="total_Wave" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="544" y="250" z="0"/>
+        <Scale width="40" height="50"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="1" TexListXml="../../res/ui/xml/testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="text_Wave" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="533" y="303" z="0"/>
+        <Scale width="114" height="44"/>
+        <Texture texPath="../../res/ui/Wave.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Crosshair" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="0" y="0" z="0"/>
+        <Scale width="40" height="40"/>
+        <Texture texPath="../../res/ui/CrossHair.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="MinimapBg" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-500" y="220" z="0"/>
+        <Scale width="302" height="298"/>
+        <Texture texPath="../../res/ui/Window_Background.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="BackHP" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-361" y="-290" z="0"/>
+        <Scale width="450" height="60"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\magazinOff.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DragUI"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="EnemyCount" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-57" y="283" z="0"/>
+        <Scale width="88" height="54"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="2" TexListXml="../../res/ui/xml/testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="SteamPackDurationBar" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="205" y="-294" z="0"/>
+        <Scale width="-12" height="80"/>
+        <Texture texPath="../../res/ui/SteamPackBar.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="UIEvent">
+                <args Function="SteamPack"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="SteamPackBg" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="190" y="-295" z="0.5"/>
+        <Scale width="166" height="90"/>
+        <Texture texPath="../../res/ui/Hud_Rectangel_selected.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_ENEMY_COUNT" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-2" y="333" z="0"/>
+        <Scale width="142" height="32"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="ENEMY" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Money" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="553" y="-201" z="0"/>
+        <Scale width="158" height="48"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="4" TexListXml="../../res/ui/xml/testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="MoneySymbol" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="396" y="-200" z="0"/>
+        <Scale width="68" height="80"/>
+        <Texture texPath="../../res/ui/Hud_Pound_Symbol.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Selected_Sword" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="455" y="-315" z="0"/>
+        <Scale width="200" height="200"/>
+        <Texture texPath="../../res/ui/knife.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-563" y="-290" z="0"/>
+        <Scale width="28" height="46"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-518" y="-291" z="0"/>
+        <Scale width="28" height="46"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-472" y="-290" z="0"/>
+        <Scale width="30" height="48"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-205" y="-291" z="0"/>
+        <Scale width="36" height="48"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-248" y="-291" z="0"/>
+        <Scale width="30" height="48"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-293" y="-291" z="0"/>
+        <Scale width="30" height="48"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-340" y="-289" z="0"/>
+        <Scale width="28" height="48"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-384" y="-289" z="0"/>
+        <Scale width="30" height="48"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-426" y="-290" z="0"/>
+        <Scale width="30" height="48"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-159" y="-292" z="0"/>
+        <Scale width="35" height="52"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\bulletMark.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="-368" y="-293" z="0"/>
+        <Scale width="538" height="86"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\Window_Header.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="121" y="-293" z="0"/>
+        <Scale width="200" height="100"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\textFieldFocused.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="SteamPackUI" isRender="true" Group="None" Scene="IngameTest.xml">
+        <Position x="155" y="-288" z="0"/>
+        <Scale width="150" height="150"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\ItemShock.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DragUI"/>
+        </Scripts>
+    </UIObject>
+</UIScene>

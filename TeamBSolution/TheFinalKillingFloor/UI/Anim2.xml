@@ -1,0 +1,6 @@
+<Animation Name="Anim2" Loop="true">
+    <Keyframe texFilePath="../../res/effect/inhaleeffect12.png" time="0.1"/>
+    <Keyframe texFilePath="../../res/effect/inhaleeffect12.png" time="0.1"/>
+    <Keyframe texFilePath="../../res/effect/star3.png" time="0.1"/>
+    <Keyframe texFilePath="../../res/effect/inhaleeffect12.png" time="0.1"/>
+</Animation>

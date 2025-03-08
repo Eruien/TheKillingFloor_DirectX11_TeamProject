@@ -1,0 +1,13 @@
+CombineOperation = CO_Use_Color_From_Material2 (1)
+AlphaOperation = AO_Use_Mask (0)
+Material1 = Texture'BluntSplashUber'
+Material2 = Shader'LightBloom'
+Mask = None
+InvertMask = false
+Modulate2X = false
+Modulate4X = false
+FallbackMaterial = None
+DefaultMaterial = None
+SurfaceType = 0
+bUseTextureAsHeat = false
+HeatMaterial = None

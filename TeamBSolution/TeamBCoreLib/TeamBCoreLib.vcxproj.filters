@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="LCamera.cpp" />
+    <ClCompile Include="LCore.cpp" />
+    <ClCompile Include="LDebugCamera.cpp" />
+    <ClCompile Include="LDevice.cpp" />
+    <ClCompile Include="LDXObject.cpp" />
+    <ClCompile Include="LFbxAnimation.cpp" />
+    <ClCompile Include="LFbxGeometry.cpp" />
+    <ClCompile Include="LFbxImport.cpp" />
+    <ClCompile Include="LFbxMgr.cpp" />
+    <ClCompile Include="LFbxObj.cpp" />
+    <ClCompile Include="LFiniteState.cpp" />
+    <ClCompile Include="LFrustum.cpp" />
+    <ClCompile Include="LFSMMgr.cpp" />
+    <ClCompile Include="LGlobal.cpp" />
+    <ClCompile Include="LHeightMap.cpp" />
+    <ClCompile Include="LInput.cpp" />
+    <ClCompile Include="LManager.cpp" />
+    <ClCompile Include="LManagerAgr.cpp" />
+    <ClCompile Include="LMap.cpp" />
+    <ClCompile Include="LModel.cpp" />
+    <ClCompile Include="LNode.cpp" />
+    <ClCompile Include="LObject.cpp" />
+    <ClCompile Include="LQurdTree.cpp" />
+    <ClCompile Include="LSoundMgr.cpp" />
+    <ClCompile Include="LTimer.cpp" />
+    <ClCompile Include="LWindow.cpp" />
+    <ClCompile Include="LWrite.cpp" />
+    <ClCompile Include="TMath.cpp" />
+    <ClCompile Include="..\..\imgui\Include\imgui_tables.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui\Include\imgui_widgets.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui\Include\ImGuiFileDialog.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui\Include\imgui.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui\Include\imgui_demo.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui\Include\imgui_draw.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui\Include\imgui_impl_dx11.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\imgui\Include\imgui_impl_win32.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tinyxml\tinyxml2.cpp">
+      <Filter>ImGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="LFbxWeight.cpp" />
+    <ClCompile Include="LModelCamera.cpp" />
+    <ClCompile Include="UICamera.cpp" />
+    <ClCompile Include="LDxRT.cpp" />
+    <ClCompile Include="LPlaneShape.cpp" />
+    <ClCompile Include="LSkyBox.cpp" />
+    <ClCompile Include="LBox.cpp" />
+    <ClCompile Include="LBackView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LCamera.h" />
+    <ClInclude Include="LCore.h" />
+    <ClInclude Include="LDebugCamera.h" />
+    <ClInclude Include="LDevice.h" />
+    <ClInclude Include="LDXObject.h" />
+    <ClInclude Include="LFbxImport.h" />
+    <ClInclude Include="LFbxMgr.h" />
+    <ClInclude Include="LFbxObj.h" />
+    <ClInclude Include="LFiniteState.h" />
+    <ClInclude Include="LFrustum.h" />
+    <ClInclude Include="LFSMMgr.h" />
+    <ClInclude Include="LGlobal.h" />
+    <ClInclude Include="LHeightMap.h" />
+    <ClInclude Include="LInput.h" />
+    <ClInclude Include="LManager.h" />
+    <ClInclude Include="LManagerAgr.h" />
+    <ClInclude Include="LMap.h" />
+    <ClInclude Include="LModel.h" />
+    <ClInclude Include="LNode.h" />
+    <ClInclude Include="LObject.h" />
+    <ClInclude Include="LQurdTree.h" />
+    <ClInclude Include="LSoundMgr.h" />
+    <ClInclude Include="LStd.h" />
+    <ClInclude Include="LTimer.h" />
+    <ClInclude Include="LWindow.h" />
+    <ClInclude Include="LWrite.h" />
+    <ClInclude Include="TMath.h" />
+    <ClInclude Include="..\..\imgui\Include\imgui_internal.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\ImGuiFileDialog.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\ImGuiFileDialogConfig.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\ImGuizmo.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\ImSequencer.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\imstb_rectpack.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\imstb_textedit.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\imstb_truetype.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\ImZoomSlider.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\GraphEditor.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\imconfig.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\ImCurveEdit.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\ImGradient.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\imgui.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\imgui_impl_dx11.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\imgui\Include\imgui_impl_win32.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tinyxml\tinyxml2.h">
+      <Filter>ImGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="LModelCamera.h" />
+    <ClInclude Include="UICamera.h" />
+    <ClInclude Include="LDxRT.h" />
+    <ClInclude Include="LPlaneShape.h" />
+    <ClInclude Include="LSkyBox.h" />
+    <ClInclude Include="LBox.h" />
+    <ClInclude Include="LBackView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ImGUI">
+      <UniqueIdentifier>{4e5f31ed-0755-4fd8-b6de-68a55657f490}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

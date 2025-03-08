@@ -1,0 +1,5 @@
+<TextureList Name="DefaultNumber">
+    <TexPaths texFilePath="../../res/ui/button1.png"/>
+    <TexPaths texFilePath="../../res/ui/button2.png"/>
+    <TexPaths texFilePath="../../res/ui/button3.png"/>
+</TextureList>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\imgui\Include\imgui.cpp" />
+    <ClCompile Include="..\..\imgui\Include\ImGuiFileDialog.cpp" />
+    <ClCompile Include="..\..\imgui\Include\imgui_demo.cpp" />
+    <ClCompile Include="..\..\imgui\Include\imgui_draw.cpp" />
+    <ClCompile Include="..\..\imgui\Include\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\..\imgui\Include\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\imgui\Include\imgui_tables.cpp" />
+    <ClCompile Include="..\..\imgui\Include\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\tinyxml\tinyxml2.cpp" />
+    <ClCompile Include="LBackView.cpp" />
+    <ClCompile Include="LBox.cpp" />
+    <ClCompile Include="LCamera.cpp" />
+    <ClCompile Include="LCore.cpp" />
+    <ClCompile Include="LDebugCamera.cpp" />
+    <ClCompile Include="LDevice.cpp" />
+    <ClCompile Include="LDXObject.cpp" />
+    <ClCompile Include="LDxRT.cpp" />
+    <ClCompile Include="LFbxAnimation.cpp" />
+    <ClCompile Include="LFbxGeometry.cpp" />
+    <ClCompile Include="LFbxImport.cpp" />
+    <ClCompile Include="LFbxMgr.cpp" />
+    <ClCompile Include="LFbxObj.cpp" />
+    <ClCompile Include="LFbxWeight.cpp" />
+    <ClCompile Include="LFiniteState.cpp" />
+    <ClCompile Include="LFrustum.cpp" />
+    <ClCompile Include="LFSMMgr.cpp" />
+    <ClCompile Include="LGlobal.cpp" />
+    <ClCompile Include="LHeightMap.cpp" />
+    <ClCompile Include="LInput.cpp" />
+    <ClCompile Include="LManager.cpp" />
+    <ClCompile Include="LManagerAgr.cpp" />
+    <ClCompile Include="LMap.cpp" />
+    <ClCompile Include="LModel.cpp" />
+    <ClCompile Include="LModelCamera.cpp" />
+    <ClCompile Include="LNode.cpp" />
+    <ClCompile Include="LObject.cpp" />
+    <ClCompile Include="LPlaneShape.cpp" />
+    <ClCompile Include="LQurdTree.cpp" />
+    <ClCompile Include="LSkyBox.cpp" />
+    <ClCompile Include="LSoundMgr.cpp" />
+    <ClCompile Include="LTimer.cpp" />
+    <ClCompile Include="LWindow.cpp" />
+    <ClCompile Include="LWrite.cpp" />
+    <ClCompile Include="TMath.cpp" />
+    <ClCompile Include="UICamera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\imgui\Include\GraphEditor.h" />
+    <ClInclude Include="..\..\imgui\Include\imconfig.h" />
+    <ClInclude Include="..\..\imgui\Include\ImCurveEdit.h" />
+    <ClInclude Include="..\..\imgui\Include\ImGradient.h" />
+    <ClInclude Include="..\..\imgui\Include\imgui.h" />
+    <ClInclude Include="..\..\imgui\Include\ImGuiFileDialog.h" />
+    <ClInclude Include="..\..\imgui\Include\ImGuiFileDialogConfig.h" />
+    <ClInclude Include="..\..\imgui\Include\ImGuizmo.h" />
+    <ClInclude Include="..\..\imgui\Include\imgui_impl_dx11.h" />
+    <ClInclude Include="..\..\imgui\Include\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\imgui\Include\imgui_internal.h" />
+    <ClInclude Include="..\..\imgui\Include\ImSequencer.h" />
+    <ClInclude Include="..\..\imgui\Include\imstb_rectpack.h" />
+    <ClInclude Include="..\..\imgui\Include\imstb_textedit.h" />
+    <ClInclude Include="..\..\imgui\Include\imstb_truetype.h" />
+    <ClInclude Include="..\..\imgui\Include\ImZoomSlider.h" />
+    <ClInclude Include="..\..\tinyxml\tinyxml2.h" />
+    <ClInclude Include="LBackView.h" />
+    <ClInclude Include="LBox.h" />
+    <ClInclude Include="LCamera.h" />
+    <ClInclude Include="LCore.h" />
+    <ClInclude Include="LDebugCamera.h" />
+    <ClInclude Include="LDevice.h" />
+    <ClInclude Include="LDXObject.h" />
+    <ClInclude Include="LDxRT.h" />
+    <ClInclude Include="LFbxImport.h" />
+    <ClInclude Include="LFbxMgr.h" />
+    <ClInclude Include="LFbxObj.h" />
+    <ClInclude Include="LFiniteState.h" />
+    <ClInclude Include="LFrustum.h" />
+    <ClInclude Include="LFSMMgr.h" />
+    <ClInclude Include="LGlobal.h" />
+    <ClInclude Include="LHeightMap.h" />
+    <ClInclude Include="LInput.h" />
+    <ClInclude Include="LManager.h" />
+    <ClInclude Include="LManagerAgr.h" />
+    <ClInclude Include="LMap.h" />
+    <ClInclude Include="LModel.h" />
+    <ClInclude Include="LModelCamera.h" />
+    <ClInclude Include="LNode.h" />
+    <ClInclude Include="LObject.h" />
+    <ClInclude Include="LPlaneShape.h" />
+    <ClInclude Include="LQurdTree.h" />
+    <ClInclude Include="LSkyBox.h" />
+    <ClInclude Include="LSoundMgr.h" />
+    <ClInclude Include="LStd.h" />
+    <ClInclude Include="LTimer.h" />
+    <ClInclude Include="LWindow.h" />
+    <ClInclude Include="LWrite.h" />
+    <ClInclude Include="TMath.h" />
+    <ClInclude Include="UICamera.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{A380F0FB-6663-4804-B20B-1508692423FF}</ProjectGuid>
+    <RootNamespace>LCoreLib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../TeamBOutput/</OutDir>
+    <IntDir>../../TeamBOutput/Debug/TeamBCoreLib/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../fmod/inc/;../../BCoreLib/texinclude/;../../fbxsdk/include/;../../FX11/inc/;../../imgui/Include/;../../tinyxml/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../LCoreLib/texlib/; ../../fbxsdk/lib/debug/; ../../fmod/lib/x64/</AdditionalLibraryDirectories>
+    </Link>
+    <Lib>
+      <OutputFile>BCoreLib.lib</OutputFile>
+      <AdditionalLibraryDirectories>../../fmod/lib/x64/;../../fbxsdk/lib/debug/;../../FX11/lib/</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy "*.h" "..\\..\\BCoreLib\\include"
+copy "*.inl" "..\\..\\BCoreLib\\include"
+copy "BCoreLib.lib" "..\\..\\BCoreLib\\lib"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

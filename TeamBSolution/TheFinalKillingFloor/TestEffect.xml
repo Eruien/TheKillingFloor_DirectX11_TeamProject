@@ -1,0 +1,14 @@
+<UIScene SceneName="TestEffect.xml">
+    <UIObject Name="" isRender="true" Group="None" Scene="TestEffect.xml">
+        <Position x="0" y="0" z="0"/>
+        <Scale width="1270" height="720"/>
+        <Texture texPath="F:\GitRepository\TeamB\res\ui\dash.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="UIEvent">
+                <args Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+</UIScene>

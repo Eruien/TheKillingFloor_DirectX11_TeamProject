@@ -1,0 +1,80 @@
+<UIScene SceneName="TestScene">
+    <UIObject Name="Tim">
+        <Position x="0" y="320" z="0"/>
+        <Scale width="252" height="92"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="3" TexListXml="../../res/ui/xml/testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="">
+        <Position x="0" y="0" z="0"/>
+        <Scale width="60" height="60"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\CrossHair.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Minimap">
+        <Position x="-540" y="260" z="0"/>
+        <Scale width="200" height="200"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\minimap.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="wp_background">
+        <Position x="461" y="-293" z="0"/>
+        <Scale width="292" height="86"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\ui_weapon_bg.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="weaponUI">
+        <Position x="544" y="-291" z="0"/>
+        <Scale width="94" height="58"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\ui_weapon_m340.25x.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="face">
+        <Position x="-556" y="-293" z="0"/>
+        <Scale width="58" height="56"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\face.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="HPbar">
+        <Position x="-376" y="-297" z="0"/>
+        <Scale width="270" height="38"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\hp_bar.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Ammo">
+        <Position x="415" y="-289" z="0"/>
+        <Scale width="106" height="46"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="3" TexListXml="../../res/ui/xml/testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+</UIScene>

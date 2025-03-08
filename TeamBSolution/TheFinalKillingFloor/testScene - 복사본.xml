@@ -1,0 +1,41 @@
+<UIScene SceneName="TestScene">
+    <UIObject Name="Button1">
+        <Position x="390" y="-107" z="0"/>
+        <Scale width="200" height="270"/>
+        <Texture texPath="../../res/effect/star3.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="Animator">
+                <args animationPath="Anim.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Button2">
+        <Position x="0" y="0" z="0"/>
+        <Scale width="200" height="200"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="DigitDisplay">
+                <args DigitNumber="3" TexListXml="testNum.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Button3">
+        <Position x="-27" y="235" z="1"/>
+        <Scale width="162" height="100"/>
+        <Texture texPath="../../res/ui/6.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+</UIScene>

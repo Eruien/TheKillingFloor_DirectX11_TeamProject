@@ -1,0 +1,10 @@
+<UIScene SceneName="LoadScene.xml">
+    <UIObject Name="LoadBackGround" isRender="true" Group="None" Scene="LoadScene.xml">
+        <Position x="0" y="0" z="0"/>
+        <Scale width="1280" height="720"/>
+        <Texture texPath="../../res/ui/ZombieInvasionBg1.png"/>
+        <Scripts>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+</UIScene>

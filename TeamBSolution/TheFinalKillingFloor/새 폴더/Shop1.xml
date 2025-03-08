@@ -1,0 +1,611 @@
+<UIScene SceneName="Shop1.xml">
+    <UIObject Name="Shop_Bg" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="0" y="0" z="0.5"/>
+        <Scale width="1920" height="1017"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\ShopBg.png"/>
+        <Scripts>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Weapon3Bg" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="603" y="283.91251" z="0"/>
+        <Scale width="525" height="353.125"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\Hud_Rectangel_W_Stroke.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Weapon2Bg" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="-22.5" y="282.5" z="0"/>
+        <Scale width="525" height="361.60001"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\Hud_Rectangel_W_Stroke.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Weapon1Bg" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="-630" y="282.5" z="0"/>
+        <Scale width="525" height="361.60001"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\Hud_Rectangel_W_Stroke.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Gun1" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="-646.5" y="259.89999" z="0"/>
+        <Scale width="300" height="282.5"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\single_9mm.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="UIEvent">
+                <args Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Gun2" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="-28.5" y="238.71251" z="0"/>
+        <Scale width="333" height="361.60001"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\Bullpup.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="UIEvent">
+                <args Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Gun3" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="600" y="234.47501" z="0"/>
+        <Scale width="420" height="395.5"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\combat_shotgun.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="UIEvent">
+                <args Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Gun2_Purchase" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="-30" y="21.1875" z="0"/>
+        <Scale width="519" height="129.95"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Gun3_empty" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="600" y="234.47501" z="0"/>
+        <Scale width="420" height="395.5"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\combat_shotgun_unselected.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="UIEvent">
+                <args Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Gun2_empty" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="-28.5" y="238.71251" z="0"/>
+        <Scale width="333" height="361.60001"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\bullpup_unselected.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="UIEvent">
+                <args Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Shop_Gun3_Purchase" isRender="true" Group="Shop" Scene="Shop1.xml">
+        <Position x="604.5" y="22.6" z="0"/>
+        <Scale width="519" height="129.95"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Purchase_Gun2" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="61.5" y="21.1875" z="0"/>
+        <Scale width="300" height="50.850002"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="PURCHASE" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Purchase_Gun3" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="711" y="21.1875" z="0"/>
+        <Scale width="309" height="48.025002"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="PURCHASE" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun1_Text2" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-736.5" y="-194.925" z="0"/>
+        <Scale width="225" height="45.200001"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="RPM    :" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun1_Text" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-736.5" y="-129.95" z="0"/>
+        <Scale width="225" height="45.200001"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="DAMAGE :" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun1_Text3" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-732" y="-258.48752" z="0"/>
+        <Scale width="228" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="MAGAZINE:" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun2_Text3" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="-130.5" y="-258.48752" z="0"/>
+        <Scale width="210" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="MAGAZINE:" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun2_Text2" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="-126" y="-190.6875" z="0"/>
+        <Scale width="231" height="39.549999"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="RPM   :" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun1_DAMAGE" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-480" y="-129.125" z="0"/>
+        <Scale width="183" height="59"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun2_Text" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="-124.5" y="-125.7125" z="0"/>
+        <Scale width="225" height="48.025002"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="DAMAGE :" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun1_DAMAGE_price" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-465" y="-124.3" z="0"/>
+        <Scale width="105" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun2_RPM" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="133.5" y="-186.625" z="0"/>
+        <Scale width="183" height="59"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun1_RPM" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-480" y="-199.16251" z="0"/>
+        <Scale width="183" height="59.325001"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun2_RPM_price" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="148" y="-185.79999" z="0"/>
+        <Scale width="104" height="41.599976"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun3_MAGAZINE" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="785" y="-254.60001" z="0"/>
+        <Scale width="183" height="59"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun1_MAGAZINE" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-481.5" y="-265.55002" z="0"/>
+        <Scale width="183" height="59.325001"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun1_RPM_price" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-465" y="-197.75" z="0"/>
+        <Scale width="108" height="45.200001"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun1_MAGAGINE_price" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-466.5" y="-264.375" z="0"/>
+        <Scale width="102" height="45.200001"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun3_MAGAZINE_price" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="803" y="-253.1875" z="0"/>
+        <Scale width="112" height="40.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun2_DAMAGE" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="133.5" y="-118.65" z="0"/>
+        <Scale width="183" height="59.325001"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun2_DAMAGE_price" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="150.5" y="-116.825" z="0"/>
+        <Scale width="114" height="38.349991"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun2_MAGAZINE" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="134" y="-256.42499" z="0"/>
+        <Scale width="183" height="59.325001"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun2_MAGAZINE_price" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="149.5" y="-255.42499" z="0"/>
+        <Scale width="114" height="42.849976"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun3_RPM" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="784" y="-187.8" z="0"/>
+        <Scale width="183" height="59"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Gun3_DAMAGE" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="784" y="-119.175" z="0"/>
+        <Scale width="183" height="59"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun3_RPM_price" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="799.5" y="-185.3875" z="0"/>
+        <Scale width="111" height="40.774994"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun3_DAMAGE_price" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="799.5" y="-117.35" z="0"/>
+        <Scale width="114" height="42.699997"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="100$" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun3_Text1" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="544.5" y="-121.475" z="0"/>
+        <Scale width="222" height="48.025002"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="DAMAGE :" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun3_Text2" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="547.5" y="-185.03751" z="0"/>
+        <Scale width="237" height="39.549999"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="RPM   :" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Gun3_Text3" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="555" y="-250.0125" z="0"/>
+        <Scale width="231" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="MAGAZINE:" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun1_DAMAGE" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-654" y="-128.53751" z="0"/>
+        <Scale width="81" height="45.200001"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun1_RPM" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-655.5" y="-197.75" z="0"/>
+        <Scale width="105" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun1_MAGAZINE" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="-649.5" y="-262.72501" z="0"/>
+        <Scale width="69" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun3_MAGAZINE" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="625.5" y="-248.60001" z="0"/>
+        <Scale width="72" height="39.549999"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun3_RPM" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="624" y="-182.625" z="0"/>
+        <Scale width="69" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun3_DAMAGE" isRender="true" Group="Gun3" Scene="Shop1.xml">
+        <Position x="622.5" y="-120.0625" z="0"/>
+        <Scale width="63" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun2_MAGAZINE" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="-34.5" y="-254.25" z="0"/>
+        <Scale width="69" height="45.200001"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun2_RPM" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="-38.5" y="-187.8625" z="0"/>
+        <Scale width="90" height="45.200001"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Gun2_DAMAGE" isRender="true" Group="Gun2" Scene="Shop1.xml">
+        <Position x="-46.5" y="-124.3" z="0"/>
+        <Scale width="87" height="42.375"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="20" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Shop_EXIT" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="757.5" y="-427.98752" z="0"/>
+        <Scale width="363" height="127.125"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="GoInGameScene"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_SHOP_EXIT" isRender="true" Group="None" Scene="Shop1.xml">
+        <Position x="787.5" y="-429.39999" z="0"/>
+        <Scale width="177" height="50.850002"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="EXIT" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+</UIScene>

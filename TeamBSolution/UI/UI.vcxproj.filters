@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Sample.cpp" />
+    <ClCompile Include="KObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="MonoBehaviour.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceBase.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="PickingUI.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Resize2D.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="DragUI.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_menuBar.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuiManager.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImguiDetail.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeTexture.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Imgui_ObjectDetail.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ModalWindow.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ExitWindow.cpp">
+      <Filter>Script\ButtonEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="DigitDisplay.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureList.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="BillBoard.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sample.h" />
+    <ClInclude Include="KObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="MonoBehaviour.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceBase.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="PickingUI.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Resize2D.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="DragUI.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuiManager.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_menuBar.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImguiDetail.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeTexture.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Imgui_ObjectDetail.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ModalWindow.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitWindow.h">
+      <Filter>Script\ButtonEvent</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="DigitDisplay.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureList.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="BillBoard.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Script">
+      <UniqueIdentifier>{a4107a89-fd29-4dfb-a81c-a5103994e41e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{4e7333d7-8178-43ef-9e3f-4d476bdd2056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{b376936a-1ee8-42a4-810c-01468be614ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{30758b24-d9f4-4ff5-b3a8-aa17ae51b472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{f34101a5-8a14-4029-ab79-907c0eae5f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\ButtonEvent">
+      <UniqueIdentifier>{fad5053c-db79-40f5-97e0-f98e3ed403f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

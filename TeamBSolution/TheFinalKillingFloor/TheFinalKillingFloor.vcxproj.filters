@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="LAnimationIO.cpp" />
+    <ClCompile Include="LCharacterIO.cpp" />
+    <ClCompile Include="LExportIO.cpp" />
+    <ClCompile Include="LWeaponMgr.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="LNPC.cpp" />
+    <ClCompile Include="LSelect.cpp" />
+    <ClCompile Include="Sample.cpp" />
+    <ClCompile Include="ZombieWave.cpp" />
+    <ClCompile Include="LScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="EndScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="LMainScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="InGameScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerAttack.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerDeath.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerIdle.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerReload.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerRun.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTakeDamage.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerWalk.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="LPlayer.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\TextureList.cpp">
+      <Filter>UI\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="AnchorUI.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Animation.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Animator.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\BillBoard.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ButtonAction.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ChangeTexture.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\DigitDisplay.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\DragUI.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ExitWindow.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\HpBar.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ModalWindow.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MonoBehaviour.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\PickingUI.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Resize2D.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ResourceBase.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Text.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\TextToTexture.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIEvent.cpp">
+      <Filter>UI\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIManager.cpp" />
+    <ClCompile Include="UI\imgui_menuBar.cpp">
+      <Filter>UI\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Imgui_ObjectDetail.cpp">
+      <Filter>UI\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ImguiDetail.cpp">
+      <Filter>UI\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ImGuiManager.cpp">
+      <Filter>UI\IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\KObject.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank.cpp">
+      <Filter>Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="TankCombo.cpp">
+      <Filter>Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="TankDeath.cpp">
+      <Filter>Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="TankRush.cpp">
+      <Filter>Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="TankTakeDamage.cpp">
+      <Filter>Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="TankTrace.cpp">
+      <Filter>Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyAttack.cpp">
+      <Filter>Zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyDeath.cpp">
+      <Filter>Zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyPatrol.cpp">
+      <Filter>Zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTakeDamage.cpp">
+      <Filter>Zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTrace.cpp">
+      <Filter>Zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="Zombie.cpp">
+      <Filter>Zombie</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SwordShopScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="PlayerOneHandSlash.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerGunShoot.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerRush.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleClass.cpp" />
+    <ClCompile Include="PlayerTwoHandSlash.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="LTrail.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPlane.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BossJumpAttack.cpp">
+      <Filter>Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BossSwiping.cpp">
+      <Filter>Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BossTrace.cpp">
+      <Filter>Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BossDeath.cpp">
+      <Filter>Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BossTakeDamage.cpp">
+      <Filter>Boss</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="LAnimationIO.h" />
+    <ClInclude Include="LCharacterIO.h" />
+    <ClInclude Include="LExportIO.h" />
+    <ClInclude Include="LWeaponMgr.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="LNPC.h" />
+    <ClInclude Include="LSelect.h" />
+    <ClInclude Include="Sample.h" />
+    <ClInclude Include="ZombieWave.h" />
+    <ClInclude Include="LScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="EndScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="LMainScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerAttack.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerDeath.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerIdle.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerReload.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerRun.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTakeDamage.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerWalk.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="LPlayer.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="InGameScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\TextureList.h">
+      <Filter>UI\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="AnchorUI.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Animation.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Animator.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BillBoard.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ButtonAction.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ChangeTexture.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\DigitDisplay.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\DragUI.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ExitWindow.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\HpBar.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ModalWindow.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MonoBehaviour.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\PickingUI.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Resize2D.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ResourceBase.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Text.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\TextToTexture.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIEvent.h">
+      <Filter>UI\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIManager.h" />
+    <ClInclude Include="UI\imgui_menuBar.h">
+      <Filter>UI\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Imgui_ObjectDetail.h">
+      <Filter>UI\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ImguiDetail.h">
+      <Filter>UI\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ImGuiManager.h">
+      <Filter>UI\IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\KObject.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
+      <Filter>Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="TankCombo.h">
+      <Filter>Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="TankDeath.h">
+      <Filter>Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="TankRush.h">
+      <Filter>Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="TankTakeDamage.h">
+      <Filter>Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="TankTrace.h">
+      <Filter>Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyAttack.h">
+      <Filter>Zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyDeath.h">
+      <Filter>Zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyPatrol.h">
+      <Filter>Zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTakeDamage.h">
+      <Filter>Zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTrace.h">
+      <Filter>Zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="Zombie.h">
+      <Filter>Zombie</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SwordShopScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="PlayerOneHandSlash.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerGunShoot.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerRush.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleClass.h" />
+    <ClInclude Include="PlayerTwoHandSlash.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="LTrail.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="TestPlane.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BossJumpAttack.h">
+      <Filter>Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BossSwiping.h">
+      <Filter>Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BossTrace.h">
+      <Filter>Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BossDeath.h">
+      <Filter>Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BossTakeDamage.h">
+      <Filter>Boss</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="UI\Anim2.xml">
+      <Filter>UI\Resource</Filter>
+    </Xml>
+    <Xml Include="UI\Anim.xml">
+      <Filter>UI\Resource</Filter>
+    </Xml>
+    <Xml Include="UI\testScene.xml">
+      <Filter>UI\Resource</Filter>
+    </Xml>
+    <Xml Include="UI\testScene - 복사본.xml">
+      <Filter>UI\Resource</Filter>
+    </Xml>
+    <Xml Include="UI\testNum.xml">
+      <Filter>UI\Resource</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\imgui.ini" />
+    <None Include="UI\UI.vcxproj" />
+    <None Include="UI\UI.vcxproj.filters" />
+    <None Include="UI\UI.vcxproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{2ed85fb1-e598-4918-8a0c-d3ece4420be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{0a9004ca-4129-4479-ae7a-f0c23e4a7ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{7e11ad29-7355-4809-b1fe-e7aa52a22b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Scripts">
+      <UniqueIdentifier>{b24023bd-aaac-4444-8f57-6816ef6be1c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Resource">
+      <UniqueIdentifier>{2951fb3c-dc27-441c-b872-6f33c264a7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\IMGUI">
+      <UniqueIdentifier>{9c060ce7-60b1-4832-8483-365b22dada92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tank">
+      <UniqueIdentifier>{c108b4f9-7c6c-4ae3-9fe8-014591164ef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Zombie">
+      <UniqueIdentifier>{e43519e7-5785-45ac-a5bc-4a5717c88527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{e1f3ee26-b06b-430f-8759-b1262aa23b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Boss">
+      <UniqueIdentifier>{e90b9f49-c4eb-40ce-b9ec-2321fa561ef2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

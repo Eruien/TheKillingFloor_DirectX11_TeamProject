@@ -1,0 +1,114 @@
+<UIScene SceneName="TestScene">
+    <UIObject Name="BackGround" isRender="false" Group="None">
+        <Position x="0" y="0" z="0"/>
+        <Scale width="1280" height="720"/>
+        <Texture texPath="../../res/ui/ZombieInvasionBg1.png"/>
+        <Scripts>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_start" isRender="true" Group="None">
+        <Position x="-465" y="153" z="0"/>
+        <Scale width="154" height="94"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="Text">
+                <args Text="Start"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_start" isRender="true" Group="None">
+        <Position x="-433" y="128" z="0"/>
+        <Scale width="200" height="100"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+            <Script Type="SceneChange">
+                <args SceneChange="6"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Option" isRender="true" Group="None">
+        <Position x="-433" y="-9" z="0"/>
+        <Scale width="200" height="100"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="MainSceneOption"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_exit" isRender="true" Group="None">
+        <Position x="-433" y="-152" z="0"/>
+        <Scale width="188" height="100"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ExitWindow"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Exit" isRender="true" Group="None">
+        <Position x="-456" y="-132" z="0"/>
+        <Scale width="156" height="98"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="Text">
+                <args Text="Exit"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Option" isRender="true" Group="None">
+        <Position x="-474" y="16" z="0"/>
+        <Scale width="200" height="192"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="Text">
+                <args Text="Option"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Logo" isRender="true" Group="None">
+        <Position x="92" y="218" z="0"/>
+        <Scale width="744" height="200"/>
+        <Texture texPath="../../res/ui/logo.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="OptionFrame" isRender="false" Group="MainOptionMenu">
+        <Position x="-5" y="-71" z="0"/>
+        <Scale width="286" height="394"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\Hud_Box_128x64.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="OptionEscape" isRender="false" Group="MainOptionMenu">
+        <Position x="117" y="97" z="0"/>
+        <Scale width="30" height="30"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\x.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+</UIScene>

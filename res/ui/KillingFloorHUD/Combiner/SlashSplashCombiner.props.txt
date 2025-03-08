@@ -1,0 +1,13 @@
+CombineOperation = CO_Multiply (2)
+AlphaOperation = AO_Use_Alpha_From_Material1 (3)
+Material1 = Shader'LightBloom'
+Material2 = Texture'SlashSplashNormal'
+Mask = Texture'SlashSplashNormal'
+InvertMask = true
+Modulate2X = true
+Modulate4X = true
+FallbackMaterial = None
+DefaultMaterial = None
+SurfaceType = 0
+bUseTextureAsHeat = false
+HeatMaterial = None

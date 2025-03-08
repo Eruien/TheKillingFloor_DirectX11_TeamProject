@@ -1,0 +1,16 @@
+<UIScene SceneName="TestScene">
+    <UIObject Name="Button1">
+        <Position x="390" y="-107" z="0"/>
+        <Scale width="200" height="270"/>
+        <Texture texPath="../../res/effect/inhaleeffect12.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="Resize2D"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="Animator">
+                <args animationPath="C:\Users\kgca42095\Documents\GitHub\TeamB\TeamBSolution\UI\Anim2.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+</UIScene>

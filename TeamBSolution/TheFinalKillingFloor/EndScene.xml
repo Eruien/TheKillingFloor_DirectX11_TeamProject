@@ -1,0 +1,61 @@
+<UIScene SceneName="EndScene.xml">
+    <UIObject Name="Eng_Bg" isRender="true" Group="None" Scene="EndScene.xml">
+        <Position x="0" y="0" z="0"/>
+        <Scale width="1280" height="720"/>
+        <Texture texPath="../../res/ui/End1.png"/>
+        <Scripts>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Button_Retry" isRender="true" Group="None" Scene="EndScene.xml">
+        <Position x="-210" y="200" z="0"/>
+        <Scale width="200" height="100"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="GoMainScene"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="Button_Exit" isRender="true" Group="None" Scene="EndScene.xml">
+        <Position x="130" y="200" z="0"/>
+        <Scale width="200" height="100"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function="None"/>
+            </Script>
+            <Script Type="ExitWindow"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_RETRY" isRender="true" Group="None" Scene="EndScene.xml">
+        <Position x="-181" y="202" z="0"/>
+        <Scale width="134" height="34"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="RETRY" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_exit" isRender="true" Group="None" Scene="EndScene.xml">
+        <Position x="147" y="200" z="0"/>
+        <Scale width="118" height="42"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="DragUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="EXIT" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+</UIScene>

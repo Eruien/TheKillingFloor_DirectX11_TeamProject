@@ -1,0 +1,47 @@
+<UIScene SceneName="SelectScene.xml">
+    <UIObject Name="Bg_CSelection" isRender="true" Group="None" Scene="SelectScene.xml">
+        <Position x="16" y="293" z="0"/>
+        <Scale width="712" height="96"/>
+        <Texture texPath="C:\Users\kgca42095\Documents\GitHub\TeamB\res\ui\Hud_Box_128x64.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_CharacterSelection" isRender="true" Group="None" Scene="SelectScene.xml">
+        <Position x="300" y="298" z="0"/>
+        <Scale width="666" height="42"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="CHARACTER SELECTION" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="B_Play" isRender="true" Group="None" Scene="SelectScene.xml">
+        <Position x="5" y="-278" z="0"/>
+        <Scale width="450" height="108"/>
+        <Texture texPath="../../res/ui/button1.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="ButtonAction">
+                <args TexListXml="../../res/ui/xml/ButtonTex.xml" Function=""/>
+            </Script>
+        </Scripts>
+    </UIObject>
+    <UIObject Name="T_Play" isRender="true" Group="None" Scene="SelectScene.xml">
+        <Position x="30" y="-276" z="0"/>
+        <Scale width="200" height="72"/>
+        <Texture texPath="../../res/ui/Empty.png"/>
+        <Scripts>
+            <Script Type="PickingUI"/>
+            <Script Type="ChangeTexture"/>
+            <Script Type="TextToTexture">
+                <args TextToTexture="PLAY" TexListXml="../../res/ui/xml/TextTexture.xml"/>
+            </Script>
+        </Scripts>
+    </UIObject>
+</UIScene>

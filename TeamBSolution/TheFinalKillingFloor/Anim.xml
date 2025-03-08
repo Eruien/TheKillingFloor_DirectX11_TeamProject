@@ -1,0 +1,19 @@
+<Animation Name="Anim" Loop="false">
+    <Keyframe texFilePath="../../res/ui/Blood/blood_1.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_2.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_3.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_4.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_5.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_6.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_7.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_8.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_9.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_10.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_11.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_12.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_13.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_14.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_15.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_16.png" time="0.02"/>
+    <Keyframe texFilePath="../../res/ui/Blood/blood_17.png" time="0.02"/>
+</Animation>
