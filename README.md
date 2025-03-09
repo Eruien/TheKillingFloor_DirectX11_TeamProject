@@ -461,6 +461,101 @@ bool LTrail::CreateIndexData()
 ![FSM_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_1.png)
 ![FSM_2](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_2.png)
 ![FSM_3](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_3.png)
+
+<details>
+<summary> FSM 헤더파일</summary>
+	
+```cpp
+// Map에는 현재 상태가 키(Key)로 저장되고 현재 상태가 어떤 FSM State 객체에 속하는지가 값(Value)으로 저장
+class LFiniteStateMachine
+{
+public:
+	std::map<State, std::unique_ptr<LFiniteState>> m_FiniteStateMap;
+public:
+	void AddStateTransition(State keyState, Event inputEvent, State outputState);
+	State StateTransition(State currentState, Event inputEvent);
+};
+
+// 현재 상태를 저장하고 현재상태에서 어떠한 이벤트가 발생해야 다음 상태로 갈지 맵에 키와 값으로  저장
+class LFiniteState
+{
+private:
+	State m_State;
+public:
+	std::map<Event, State> m_StateMap;
+public:
+	State GetState() { return m_State; }
+public:
+	void AddTransition(Event inputEvent, State outputState);
+	State Output(Event inputEvent);
+public:
+	LFiniteState(State state);
+};
+```
+
+</details>
+<details>
+<summary> FSM 소스파일</summary>
+	
+```cpp
+// Map에 현재 상태가 등록되어 있지 않다면 등록
+// 현재 상태에서 매개변수 이벤트가 발생할 시 다음 상태로 변환되도록 Map에 저장
+void LFiniteStateMachine::AddStateTransition(State keyState, Event inputEvent, State outputState)
+{
+	auto finiteIter = m_FiniteStateMap.find(keyState);
+
+	if (m_FiniteStateMap.end() != finiteIter)
+	{
+		finiteIter->second->AddTransition(inputEvent, outputState);
+	}
+	else
+	{
+		m_FiniteStateMap.insert(std::make_pair(keyState, std::make_unique<LFiniteState>(keyState)));
+
+		finiteIter = m_FiniteStateMap.find(keyState);
+		finiteIter->second->AddTransition(inputEvent, outputState);
+	}
+}
+
+// 현재 상태에서 해당되는 이벤트가 있다면 다음 이벤트를 반환
+// 해당 상태가 등록되어 있지 않은 경우 None을 반환
+State LFiniteStateMachine::StateTransition(State currentState, Event inputEvent)
+{
+	auto finiteIter = m_FiniteStateMap.find(currentState);
+
+	if (finiteIter == m_FiniteStateMap.end())
+	{
+		return State::NONE;
+	}
+
+	auto retStateIter = finiteIter->second->m_StateMap.find(inputEvent);
+
+	if (retStateIter == finiteIter->second->m_StateMap.end())
+	{
+		return State::NONE;
+	}
+
+	State state = retStateIter->second;
+	return state;
+}
+
+// 현재상태에서 어떠한 이벤트가 발생해야 다음 상태로 갈지 맵에 키와 값으로 저장
+void LFiniteState::AddTransition(Event inputEvent, State outputState)
+{
+	m_StateMap.insert(std::make_pair(inputEvent, outputState));
+}
+
+// 이벤트를 키값으로 어떠한 상태로 변환될지 검색
+State LFiniteState::Output(Event inputEvent)
+{
+	auto iter = m_StateMap.find(inputEvent);
+	State state = iter->second;
+	return state;
+}
+```
+
+</details>
+
 # FBX Loader
 * FBX 노드의 메쉬랑 본 데이터를 읽어서 프로젝트에서 사용할 수 있게 컨버팅
 ![FBXLoader_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FBXLoader_1.png)
