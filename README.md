@@ -246,7 +246,7 @@ Texture2D g_txDiffuse1 : register(t0);
 // 필터링 제어에 사용
 SamplerState sample0 : register(s0);
 
-정점(Vertex) 데이터를 입력받을 때는 사용자가 설정한 레이아웃(Layout)의 이름(POSITION, NORMAL, COLOR, TEXCOORD)과 같아야 한다.
+// 정점(Vertex) 데이터를 입력받을 때는 사용자가 설정한 레이아웃(Layout)의 이름(POSITION, NORMAL, COLOR, TEXCOORD)과 같아야 한다.
 struct VS_INPUT
 {
     float3 p : POSITION;
@@ -255,7 +255,7 @@ struct VS_INPUT
     float2 t : TEXCOORD;
 };
 
-VS_OUTPUT : 정점 데이터를 계산해서 이후의 파이프라인에 넘겨주게 되는데 위치(SV_POSITION)의 경우 고정된 이름으로 넘겨주게 된다. 어떠한 것이 위치인지 알아야 이후의 파이프라인에서 위치를 기반해서 처리하기 때문이다.
+// 정점 데이터를 계산해서 이후의 파이프라인에 넘겨주게 되는데 위치(SV_POSITION)의 경우 고정된 이름으로 넘겨주게 된다. 어떠한 것이 위치인지 알아야 이후의 파이프라인에서 위치를 기반해서 처리하기 때문이다.
 struct VS_OUTPUT
 {
     float4 p : SV_POSITION;
@@ -273,7 +273,7 @@ cbuffer cb0
     matrix g_matProj  : packoffset(c8);
 };
 
-이후의 파이프라인에 넘겨주기 위해 정점(Vertex) 하나마다 행렬을 곱해준다.
+// 이후의 파이프라인에 넘겨주기 위해 정점(Vertex) 하나마다 행렬을 곱해준다.
 VS_OUTPUT VS(VS_INPUT vIn)
 {
     VS_OUTPUT vOut = (VS_OUTPUT)0;
@@ -290,13 +290,12 @@ VS_OUTPUT VS(VS_INPUT vIn)
 // 위에까지 VertexShader
 // 아래부터 PixelShader
 
-SV_Target : 반환 값의 의도가 색상이라는 걸 나타낸다.
-텍스처(Texture)에서 Sampler State로 필터링 된 색상을 반환 
+// SV_Target : 반환 값의 의도가 색상이라는 걸 나타낸다.
+// 텍스처(Texture)에서 Sampler State로 필터링 된 색상을 반환 
 float4 PS(VS_OUTPUT vIn) : SV_Target
 {
-    //            r,g,b,a(1)=불투명, a(0)=완전투명, a(0.0< 1.0f)= 반투명
-    return g_txDiffuse1.Sample(sample0, vIn.t);// *vIn.c;
-    //return vIn.c;
+    // r,g,b,a(1)=불투명, a(0)=완전투명, a(0.0< 1.0f)= 반투명
+    return g_txDiffuse1.Sample(sample0, vIn.t);
 }
 ```
 
