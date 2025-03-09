@@ -16,3 +16,6 @@
 * 마우스 좌클릭 : 공격
 * 마우스 우클릭 : 줌 인
 # Graphics Pipeline
+![Pipeline Image](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/Pipeline.jpg)
+# Pipeline Class
+![Pipeline Class](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/Pipeline.jpg)
