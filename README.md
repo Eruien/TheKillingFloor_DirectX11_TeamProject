@@ -610,7 +610,7 @@ public:
 <summary> FBX Loader 소스파일</summary>
 	
 ```cpp
-함수는 여러가지가 있지만 전체적으로 FBX 메쉬의 정점을 가지고 와서 MAX -> DirectX11로 사용할 수 있게 컨버팅 하는 로직
+// 함수는 여러가지가 있지만 전체적으로 FBX 메쉬의 정점을 가지고 와서 MAX -> DirectX11로 사용할 수 있게 컨버팅 하는 로직
 ```
 
 </details>
