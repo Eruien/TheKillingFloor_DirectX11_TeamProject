@@ -302,12 +302,15 @@ float4 PS(VS_OUTPUT vIn) : SV_Target
 </details>
 
 # Sword Trail
+* 칼이 휘두르는 궤적에 따라 정점을 생성하여 시각화
 ![SwordTrail_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/SwordTrail_1.png)
 ![SwordTrail_2](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/SwordTrail_2.png)
 # FSM(finite-state-machine)
+* 유한한 상태를 정해놓고 사용하는 설계 기법
 ![FSM_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_1.png)
 ![FSM_2](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_2.png)
 ![FSM_3](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_3.png)
 # FBX Loader
+* FBX 노드의 메쉬랑 본 데이터를 읽어서 프로젝트에서 사용할 수 있게 컨버팅
 ![FBXLoader_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FBXLoader_1.png)
 ![FBXLoader_2](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FBXLoader_2.png)
