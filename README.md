@@ -75,7 +75,7 @@ public:
 // IndexBuffer, ConstantBuffer도 비슷한 방식으로 생성
 bool LDXObject::CreateVertexBuffer()
 {    
-    	D3D11_BUFFER_DESC bufferDesc;
+    D3D11_BUFFER_DESC bufferDesc;
 	ZeroMemory(&bufferDesc, sizeof(bufferDesc));
 	bufferDesc.ByteWidth = sizeof(SimpleVertex) * m_VertexList.size();
 	bufferDesc.Usage = D3D11_USAGE_DEFAULT;
@@ -177,32 +177,7 @@ bool LDXObject::CreateLayout()
 	return true;
 }
 
-bool LDXObject::Create(std::wstring shaderFileName, std::wstring texFileName)
-{
-	CreateVertexData();
-	CreateIndexData();
-	CreateVertexBuffer();
-	CreateIndexBuffer();
-	CreateConstantBuffer();
-	// obj공용 // m_pVS, m_pPS 쉐이더 생성
-	m_Shader = LManager<LShader>::GetInstance().Load(shaderFileName);
-	CreateLayout();
-	// obj공용 // m_pTexSRV 생성
-	m_Tex = LManager<LTexture>::GetInstance().Load(texFileName);
-
-	return true;
-}
-
-bool LDXObject::Init()
-{
-	return true;
-}
-
-bool LDXObject::Frame()
-{
-	return true;
-}
-
+// 렌더링 작업전에 사전 작업처리 PreRender 함수
 bool LDXObject::PreRender()
 {
 	m_pImmediateContext->IASetInputLayout(m_pVertexLayout.Get());
@@ -229,6 +204,7 @@ bool LDXObject::PreRender()
 	return true;
 }
 
+// 렌더링 작업 함수
 bool LDXObject::Render()
 {
 	PreRender();
@@ -236,6 +212,7 @@ bool LDXObject::Render()
 	return true;
 }
 
+// 렌더링 이후 작업 PostRender 함수
 bool LDXObject::PostRender()
 {
 	if (m_pIndexBuffer == nullptr)
@@ -251,12 +228,6 @@ bool LDXObject::PostRender()
 	
 	return true;
 }
-
-bool LDXObject::Release()
-{
-	return true;
-}
-
 ```
 
 </details>
