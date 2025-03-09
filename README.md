@@ -70,29 +70,12 @@ public:
 <summary> LDXObject 소스파일</summary>
 	
 ```cpp
-#include "LDXObject.h"
-#include "LGlobal.h"
-
-void LDXObject::Set()
-{
-	m_pDevice = LGlobal::g_pDevice;
-	m_pImmediateContext = LGlobal::g_pImmediateContext;
-	
-}
-
-bool LDXObject::CreateVertexData()
-{
-	return true;
-}
-
-bool LDXObject::CreateIndexData()
-{
-	return true;
-}
-
+// 정점 구조체(SimpleVertex) * 구조체 개수 만큼 메모리 할당
+// initialData에는 m_VertexList 배열의 처음 주소 할당
+// IndexBuffer, ConstantBuffer도 비슷한 방식으로 생성
 bool LDXObject::CreateVertexBuffer()
-{
-	D3D11_BUFFER_DESC bufferDesc;
+{    
+    	D3D11_BUFFER_DESC bufferDesc;
 	ZeroMemory(&bufferDesc, sizeof(bufferDesc));
 	bufferDesc.ByteWidth = sizeof(SimpleVertex) * m_VertexList.size();
 	bufferDesc.Usage = D3D11_USAGE_DEFAULT;
@@ -167,6 +150,8 @@ bool LDXObject::CreateConstantBuffer()
 	return true;
 }
 
+// 파이프 라인 정점(Vertex) 레이아웃(Layout) 설정
+// 현재 프로젝트에서는 PNCT(Position, Normal, Color, Texture) 데이터를 사용
 bool LDXObject::CreateLayout()
 {
 	D3D11_INPUT_ELEMENT_DESC layout[] =
