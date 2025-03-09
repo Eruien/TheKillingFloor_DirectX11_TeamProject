@@ -1,4 +1,4 @@
-# TheKillingFloor
+![image](https://github.com/user-attachments/assets/b2fafa1e-07f7-4299-9d67-02877c67bb31)# TheKillingFloor
 * 플레이 영상 : <https://www.youtube.com/watch?v=5SlkLLaxNSU>
 * 기술 소개 영상 : <https://www.youtube.com/watch?v=CBATlZ7Ium8>
 * 다운로드 : <http://naver.me/Gal3Aupb>
@@ -233,5 +233,71 @@ bool LDXObject::PostRender()
 </details>
 
 # RenderingCode Flow
+* 렌더링 코드 전체 흐름
 ![Pipeline Class](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/RenderingFlow.png)
+# HLSL(High-Level Shader Language)
+* 셰이더 코드 소개
+<details>
+<summary> HLSL 코드</summary>
+	
+```cpp
+// ShaderResourceView에서 Diffuse Texture를 읽어 GPU 레지스터에 등록
+Texture2D g_txDiffuse1 : register(t0);
+// 필터링 제어에 사용
+SamplerState sample0 : register(s0);
 
+정점(Vertex) 데이터를 입력받을 때는 사용자가 설정한 레이아웃(Layout)의 이름(POSITION, NORMAL, COLOR, TEXCOORD)과 같아야 한다.
+struct VS_INPUT
+{
+    float3 p : POSITION;
+    float3 n : NORMAL;
+    float4 c : COLOR;
+    float2 t : TEXCOORD;
+};
+
+VS_OUTPUT : 정점 데이터를 계산해서 이후의 파이프라인에 넘겨주게 되는데 위치(SV_POSITION)의 경우 고정된 이름으로 넘겨주게 된다. 어떠한 것이 위치인지 알아야 이후의 파이프라인에서 위치를 기반해서 처리하기 때문이다.
+struct VS_OUTPUT
+{
+    float4 p : SV_POSITION;
+    float3 n : NORMAL;
+    float4 c : COLOR0;
+    float2 t : TEXCOORD0;
+};
+
+// 상수버퍼(레지스터 단위로 저장되어야 한다.)
+// 레지스터 단위란, float4(x,y,z,w)
+cbuffer cb0
+{
+    matrix g_matWorld  : packoffset(c0);// float4x4 // 4개
+    matrix g_matView  : packoffset(c4);
+    matrix g_matProj  : packoffset(c8);
+};
+
+이후의 파이프라인에 넘겨주기 위해 정점(Vertex) 하나마다 행렬을 곱해준다.
+VS_OUTPUT VS(VS_INPUT vIn)
+{
+    VS_OUTPUT vOut = (VS_OUTPUT)0;
+    float4 vWorld = mul(float4(vIn.p,1.0f),g_matWorld);
+    float4 vView = mul(vWorld, g_matView);
+    float4 vProj = mul(vView, g_matProj);
+    vOut.p = vProj;
+    vOut.n = vIn.n;
+    vOut.t = vIn.t;
+    vOut.c = vIn.c;
+    return vOut;
+}
+
+// 위에까지 VertexShader
+// 아래부터 PixelShader
+
+SV_Target : 반환 값의 의도가 색상이라는 걸 나타낸다.
+텍스처(Texture)에서 Sampler State로 필터링 된 색상을 반환 
+float4 PS(VS_OUTPUT vIn) : SV_Target
+{
+    //            r,g,b,a(1)=불투명, a(0)=완전투명, a(0.0< 1.0f)= 반투명
+    return g_txDiffuse1.Sample(sample0, vIn.t);// *vIn.c;
+    //return vIn.c;
+}
+```
+
+</details>
