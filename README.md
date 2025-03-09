@@ -305,6 +305,156 @@ float4 PS(VS_OUTPUT vIn) : SV_Target
 * 칼이 휘두르는 궤적에 따라 정점을 생성하여 시각화
 ![SwordTrail_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/SwordTrail_1.png)
 ![SwordTrail_2](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/SwordTrail_2.png)
+
+<details>
+<summary> Sword Trail 헤더파일</summary>
+	
+```cpp
+class LTrail : public LObject
+{
+public:
+        // 트레일에 사용될 정점의 개수
+	int m_iTrailVertexSize = 96;
+	int m_iTrailCountSize = 95;
+        // 0 ~ 95까지 시간이 지나면 카운트 증가
+	int m_iVertexCount = 0;
+        // 트레일의 시작 타이머값을 0으로 설정할 시 초반 트레일이 사라지는 문제가 있어서 End값보다 크게 설정
+	float m_TimerStart = 1.0;
+	float m_TimerEnd = 0.01;
+        // Catmull-Rom Splines에 사용될 배열
+	int m_iCatmullRomIndex[4] = { 0, };
+public:
+	void RenderTrail(TVector3* localSwordLow, TVector3* localSwordHigh, TMatrix* matSwordParent);
+	void InterpolRenderTrail(TVector3* localSwordLow, TVector3* localSwordHigh, TMatrix* matSwordParent);
+public:
+	bool CreateVertexData() override;
+	bool CreateIndexData() override;
+};
+```
+
+</details>
+<details>
+<summary> Sword Trail 소스파일</summary>
+	
+```cpp
+// m_TimerEnd의 경우 하나의 텍스처(Texture) 트레일(Trail)이 끝나는 시간입니다. 시간이 경과되면 타이머를 초기화하고 다음 텍스처(Texture)를 그리기 시작합니다.
+// m_iVertexCount는 정점 개수의 최대치입니다. 최대치를 넘어가면 전체 정점을 배열에서 제거하고 화면에서 트레일 텍스처(Textrue)를 지웁니다.
+// 이후에는 Catmull-Rom Splines에 사용할 정점 4개를 선정하는  과정입니다.
+void LTrail::InterpolRenderTrail(TVector3* localSwordLow, TVector3* localSwordHigh, TMatrix* matSwordParent)
+{
+    m_TimerStart += LGlobal::g_fSPF;
+
+    if (m_TimerStart > m_TimerEnd)
+    {
+        m_TimerStart = 0.0f;
+        m_iVertexCount += 2;
+    }
+
+    if (m_iVertexCount > m_iTrailCountSize)
+    {
+        m_VertexList.clear();
+        m_VertexList.resize(m_iTrailVertexSize);
+        m_iVertexCount = 0;
+    }
+
+    if (m_iVertexCount - 2 < 0)
+    {
+        m_iCatmullRomIndex[0] = m_iTrailCountSize - 1;
+    }
+    else
+    {
+        m_iCatmullRomIndex[0] = m_iVertexCount - 2;
+    }
+
+    m_iCatmullRomIndex[1] = m_iVertexCount;
+
+    if (m_iVertexCount + 2 > m_iTrailCountSize)
+    {
+        m_iCatmullRomIndex[2] = 0;
+        m_iCatmullRomIndex[3] = 2;
+    }
+    else
+    {
+        m_iCatmullRomIndex[2] = m_iVertexCount + 2;
+        m_iCatmullRomIndex[3] = m_iVertexCount + 4;
+    }
+
+    if (m_iVertexCount + 4 > m_iTrailCountSize)
+    {
+        m_iCatmullRomIndex[3] = 0;
+    }
+    else
+    {
+        m_iCatmullRomIndex[3] = m_iVertexCount + 4;
+    }
+
+    for (int i = 0; i < 1; i++)
+    {
+        D3DXVec3CatmullRom(&m_VertexList[m_iVertexCount].p,
+            &m_VertexList[m_iCatmullRomIndex[0]].p,
+            &m_VertexList[m_iCatmullRomIndex[1]].p,
+            &m_VertexList[m_iCatmullRomIndex[2]].p,
+            &m_VertexList[m_iCatmullRomIndex[3]].p,
+            0.5);
+
+        D3DXVec3CatmullRom(&m_VertexList[m_iVertexCount + 1].p,
+            &m_VertexList[m_iCatmullRomIndex[0] + 1].p,
+            &m_VertexList[m_iCatmullRomIndex[1] + 1].p,
+            &m_VertexList[m_iCatmullRomIndex[2] + 1].p,
+            &m_VertexList[m_iCatmullRomIndex[3] + 1].p,
+            0.5);
+    }
+
+    D3DXVec3TransformCoord(&m_VertexList[m_iVertexCount].p, localSwordLow, matSwordParent);
+    D3DXVec3TransformCoord(&m_VertexList[m_iVertexCount + 1].p, localSwordHigh, matSwordParent);
+
+    for (int i = 0; i < m_iVertexCount; i += 2)
+    {
+        m_VertexList[i].t = { float(i) / (float(m_iVertexCount) - 2), 0.0f };
+        m_VertexList[i + 1].t = { float(i) / (float(m_iVertexCount) - 2), 1.0f };
+    }
+
+    LGlobal::g_pImmediateContext->UpdateSubresource(m_pVertexBuffer.Get(), 0, NULL, m_VertexList.data(), 0, 0);
+    UINT stride = sizeof(SimpleVertex);
+    UINT offset = 0;
+    LGlobal::g_pImmediateContext->IASetVertexBuffers(0, 1, m_pVertexBuffer.GetAddressOf(), &stride, &offset);
+    SetMatrix(nullptr, &LGlobal::g_pMainCamera->m_matView, &LGlobal::g_pMainCamera->m_matProj);
+    Render();
+}
+
+bool LTrail::CreateVertexData()
+{
+	// 업데이트시 pnct값을 넣어주기 때문에 구조체에 값을 넣어주지 않아도 됨
+	m_VertexList.resize(m_iTrailVertexSize);
+	
+	return true;
+}
+
+bool LTrail::CreateIndexData()
+{
+	int indexVertexSize = (m_iTrailVertexSize - 2) * 3;
+	m_IndexList.resize(indexVertexSize);
+
+	int squareSize = (indexVertexSize / 6) * 2;
+
+	for (int i = 0; i < squareSize; i += 2)
+	{
+		m_IndexList[(i * 3)] = i + 3;
+		m_IndexList[(i * 3) + 1] = i + 1;
+		m_IndexList[(i * 3) + 2] = i;
+
+		m_IndexList[(i * 3) + 3] = i + 2;
+		m_IndexList[(i * 3) + 4] = i + 3;
+		m_IndexList[(i * 3) + 5] = i;
+	}
+
+	return true;
+}
+
+
+```
+
+</details>
 # FSM(finite-state-machine)
 * 유한한 상태를 정해놓고 사용하는 설계 기법
 ![FSM_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_1.png)
