@@ -19,6 +19,9 @@
 ![Pipeline Image](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/Pipeline.png)
 # Pipeline Class
 ![Pipeline Class](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/PipelineClass.png)
+<details>
+<summary> LDXObject</summary>
+	
 ```cpp
 class LDXObject
 {
@@ -54,3 +57,5 @@ public:
 	virtual ~LDXObject() {}
 };
 ```
+
+</details>
