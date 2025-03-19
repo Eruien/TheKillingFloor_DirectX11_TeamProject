@@ -612,7 +612,7 @@ public:
 ```cpp
 // 함수는 여러가지가 있지만 전체적으로 FBX 메쉬의 정점을 가지고 와서 MAX -> DirectX11로 사용할 수 있게 컨버팅 하는 로직
 
-인자로 넣어준 fbxObject에게 애니메이션 정보를 세팅해준다.
+// 인자로 넣어준 fbxObject에게 애니메이션 정보를 세팅해준다.
 void LFbxImport::GetAnimation(LFbxObj* fbxObj)
 {
         // 애니메이션 60프레임으로 설정
