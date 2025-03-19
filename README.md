@@ -664,7 +664,7 @@ void LFbxImport::GetAnimation(LFbxObj* fbxObj)
 	}
 }
 
-배열에서 텍스처 좌표를 읽는 함수
+// 배열에서 텍스처 좌표를 읽는 함수
 FbxVector2 LFbxImport::ReadTextureCoord(FbxLayerElementUV* layer, int iVertexIndex, int iIndex)
 {
 	FbxVector2 texture;
@@ -710,7 +710,7 @@ FbxVector2 LFbxImport::ReadTextureCoord(FbxLayerElementUV* layer, int iVertexInd
 	return texture;
 }
 
-배열에서 컬러값을 읽는 함수 
+// 배열에서 컬러값을 읽는 함수 
 FbxColor LFbxImport::ReadColor(FbxLayerElementVertexColor* layer, int iVertexIndex, int iIndex)
 {
 	FbxColor color;
@@ -806,7 +806,7 @@ FbxVector4 LFbxImport::ReadNormal(FbxLayerElementNormal* layer, int iVertexIndex
 	return normal;
 }
 
-머터리얼 파일의 경로를 읽어오는 함수
+// 머터리얼 파일의 경로를 읽어오는 함수
 std::string LFbxImport::ParseMaterial(FbxSurfaceMaterial* pSurfaceMaterial)
 {
 	std::string materialFullPath;
@@ -832,7 +832,7 @@ std::string LFbxImport::ParseMaterial(FbxSurfaceMaterial* pSurfaceMaterial)
 	return materialFullPath;
 }
 
-서브 머터리얼의 경로를 읽어 오는 함수
+// 서브 머터리얼의 경로를 읽어 오는 함수
 int LFbxImport::GetSubMaterialIndex(FbxLayerElementMaterial* layer, int iPoly)
 {
 	int SubMaterialIndex = 0;
@@ -858,7 +858,7 @@ int LFbxImport::GetSubMaterialIndex(FbxLayerElementMaterial* layer, int iPoly)
 	return SubMaterialIndex;
 }
 
-FBX 행렬을 TMatrix로 변환
+// FBX 행렬을 TMatrix로 변환
 TMatrix LFbxImport::ConvertAMatrix(FbxMatrix& m)
 {
 	TMatrix mat;
@@ -873,7 +873,7 @@ TMatrix LFbxImport::ConvertAMatrix(FbxMatrix& m)
 	return mat;
 }
 
-TMatrix를 현재 쓰는 행렬로 변환
+// TMatrix를 현재 쓰는 행렬로 변환
 TMatrix LFbxImport::DxConvertMatrix(TMatrix& m)
 {
 	TMatrix mat;
@@ -886,7 +886,7 @@ TMatrix LFbxImport::DxConvertMatrix(TMatrix& m)
 	return mat;
 }
 
-FBXNode가 들어오면 바로 사용하는 행렬로 변환 되게 함수 정리
+// FBXNode가 들어오면 바로 사용하는 행렬로 변환 되게 함수 정리
 TMatrix LFbxImport::ParseTransform(FbxNode* fbxNode)
 {
 	FbxTime::EMode TimeMode = FbxTime::GetGlobalTimeMode();
