@@ -1,4 +1,6 @@
 # TheKillingFloor
+<img src="Image/TheKillingFloor.png" width="600" height="350"/>
+
 * 플레이 영상 : <https://www.youtube.com/watch?v=5SlkLLaxNSU>
 * 기술 소개 영상 : <https://www.youtube.com/watch?v=CBATlZ7Ium8>
 * 다운로드 : <http://naver.me/Gal3Aupb>
