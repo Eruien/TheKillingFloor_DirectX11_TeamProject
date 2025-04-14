@@ -304,7 +304,7 @@ float4 PS(VS_OUTPUT vIn) : SV_Target
 </details>
 
 # Sword Trail
-* 칼이 휘두르는 궤적에 따라 정점을 생성하여 시각화
+* 칼이 휘두르는 궤적을 시각적으로 표현하기 위해 정점을 생성하고 그 위치에 텍스처를 붙여 시각화
 ![SwordTrail_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/SwordTrail_1.png)
 ![SwordTrail_2](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/SwordTrail_2.png)
 
@@ -459,7 +459,7 @@ bool LTrail::CreateIndexData()
 </details>
 
 # FSM(finite-state-machine)
-* 유한한 상태를 정해놓고 사용하는 설계 기법
+* 캐릭터의 많은 상태 전환을 효율적으로 관리하기 위해 FSM 사용
 ![FSM_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_1.png)
 ![FSM_2](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_2.png)
 ![FSM_3](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FSM_3.png)
@@ -559,7 +559,7 @@ State LFiniteState::Output(Event inputEvent)
 </details>
 
 # FBX Loader
-* FBX 노드의 메쉬랑 본 데이터를 읽어서 프로젝트에서 사용할 수 있게 컨버팅
+* 3D FBX 데이터를 자주 불러오기 때문에 FBX 데이터를 바이너리화 해서 저장하고 로드할 수 있는 툴 제작
 ![FBXLoader_1](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FBXLoader_1.png)
 ![FBXLoader_2](https://github.com/Eruien/TheKillingFloor_DirectX11_TeamProject/blob/main/Image/FBXLoader_2.png)
 
